@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #2f3640;
+    color: #f5f6fa;
+    font-size: 16px;
+}
+
+.clock{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3.5em;
+    animation: bord 10s ease-in-out infinite; 
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+
+.clock span{
+    margin-left: 10px;
+    
+}
+
+.clock:hover{
+    font-size: 5em;
+}
+
+@keyframes bord{
+    100%{border: 2px solid #f5f6fa;}
+    50%{border-left: 2px solid #f5f6fa;border-right: 2px solid #f5f6fa;}
+    75%{border-bottom: 2px solid #f5f6fa;border-right: 2px solid #f5f6fa;border-left: 2px solid #f5f6fa;}
+    25%{border-bottom: 2px solid #f5f6fa;}
+    0%{}
+}
